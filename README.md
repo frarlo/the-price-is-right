@@ -20,6 +20,33 @@ Adaptación de la Fase II a un entorno Cliente-Servidor utilizando sockets orien
 
 Adaptación de la Fase III para que la comunicación entre Cliente y Servidor utilice encriptación híbrida (clave simétrica variable en cada comunicación entre pares siendo descifrada con las claves asimétricas correspondientes de cada parte).
 
+# Cómo jugar
+
+Nota: El desarrollo de este juego fue puramente académico, por eso las claves asimétricas privadas están subidas a este repositorio. En un entorno de producción, jamás habría que mostrar nuestra clave privada.
+
+Para jugar necesitaremos tener instalado Python en nuestro ordenador. Aparte, deberemos instalar la librería de PyCryptodome:
+
+```
+pip install pycryptodome
+```
+
+Podemos descargar todos los archivos (hacen falta los seis) o clonar directamente el directorio con git:
+
+```
+git clone https://github.com/frarlo/the-price-is-right.git
+```
+
+Para jugar, primero ejecutaremos la instancia de servidor:
+
+```
+python servidor.py
+```
+
+Y luego la de cliente:
+```
+python cliente.py
+```
+
 ### Licencia
 
 Este proyecto está licenciado bajo la Licencia Pública General de GNU (GPL) 3.0.
